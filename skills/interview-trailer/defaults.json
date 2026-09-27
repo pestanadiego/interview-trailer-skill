@@ -1,0 +1,51 @@
+{
+  "style": {
+    "font": "Inter-SemiBold",
+    "font_size": 46,
+    "speaker_colors": ["#CEF58E", "#FFA5CB", "#9AD7FF", "#FFD27A"],
+    "outline": false,
+    "plate": true,
+    "plate_rgba": [0, 0, 0, 165],
+    "max_line_chars": 42,
+    "max_lines": 2,
+    "bottom_margin": 40,
+    "quotes": "straight",
+    "end_fade_seconds": 1.5,
+    "loudness_lufs": -16,
+    "width": 1920,
+    "height": 1080
+  },
+  "framing": {
+    "mode": "follow-speaker",
+    "tile_shrink": 0.045,
+    "full_shrink": 0.03,
+    "sample_width": 960,
+    "sample_fps": 2
+  },
+  "cuts": {
+    "search_window": 0.8,
+    "min_gap": 0.12,
+    "lead_in": 0.05,
+    "tail_out": 0.10
+  },
+  "transcription": {
+    "model": "large-v3-turbo",
+    "initial_prompts": {
+      "es": "Hola, ¿qué tal? Bueno, les cuento: esta es la conversación de hoy.",
+      "en": "Hello, how are you? Well, let me tell you: this is today's conversation.",
+      "pt": "Olá, tudo bem? Bom, vou contar: esta é a conversa de hoje."
+    },
+    "fillers": ["eh", "ehm", "em", "mm", "mmm", "um", "uh", "uhm", "hmm"]
+  },
+  "redact": {
+    "enabled": true,
+    "money": true,
+    "percentages": true,
+    "card_last4": true,
+    "long_numbers": true,
+    "emails": true,
+    "name_column_headers": ["card name", "cardholder", "customer", "name", "owner", "employee", "user", "member", "client", "payee", "recipient", "account holder", "email", "contact"],
+    "blur_downscale": 40,
+    "blur_sigma": 12
+  }
+}
